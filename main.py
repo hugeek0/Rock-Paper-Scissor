@@ -48,7 +48,7 @@ def play():
         if winner is None:
             print(f'equal\nuser:{result["user"]}\tsystem:{result["system"]}')
 
-        if winner == user_ch:
+        elif winner == user_ch:
             result["user"] += 1
             print(
                 f'ur winner :)\nuser:{result["user"]}\tsystem:{result["system"]}')
