@@ -33,7 +33,7 @@ def update_scoreboard(result):
 
     print("#" * 20)
     print(
-        f'\t{msg.upper()}\n##  user_score:{score_board["user"]}  ##\n'
+        f'{msg.upper():^20}\n##  user_score:{score_board["user"]}  ##\n'
         f'## system_score:{score_board["system"]} ##')
     print("#" * 20)
 
@@ -51,7 +51,7 @@ def play():
         elif winner == user_ch:
             result["user"] += 1
             print(
-                f'ur winner :)\nuser:{result["user"]}\tsystem:{result["system"]}')
+                f'you are winner :)\nuser:{result["user"]}\tsystem:{result["system"]}')
         else:
             result["system"] += 1
             print(
